@@ -2,6 +2,7 @@
 <html>
 
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="common_css.css">
     <link rel="stylesheet" href="login.css">
 
@@ -13,15 +14,29 @@
       <li class="nav-bar-element"><a href="index.html" class="nav-bar-link">Home</a></li>
       <li class="nav-bar-element"><a href="addPost.html" class="nav-bar-link">Add post</a></li>
     </ul>
+    <br>
 
-    <form method="POST" action="index.html">
-      <label for="email"></label>
-      <input type="email" id="email" name="email" placeholder="Email" required="true">
-      <label for="password"></label>
-      <input type="password" id="password" name="password" placeholder="Password" required="true">
+    <div class="container">
+      <form method="POST" action="index.html" class="flex-item">
+        <div>
+          <p>
+            Welcome to PostIt <br>
+            <a href="#">Create an account</a> <br>
+            or <br>
+            Please log in
+          </p>
+        </div>
+        <label for="email"></label>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+        <label for="password"></label>
+        <input type="password" id="password" name="password" placeholder="Password" required>
 
-      <input type="submit" id="submit" value="Log in">
-    </form>
+        <input type="submit" id="submit" value="Log in">
+        <a href="#">Forgot password</a>
+      </form>
+
+    </div>
+
   </body>
 
 </html>

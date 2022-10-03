@@ -13,7 +13,6 @@
 
 .nav-bar-link {
   display: block;
-  padding: 8px;
   color: white;
   text-align: center;
   padding: 14px 16px;
@@ -22,4 +21,8 @@
 
 .nav-bar-link:hover {
   background-color: darkgrey;
+}
+
+.flex-item {
+  border-radius: 10px;
 }
