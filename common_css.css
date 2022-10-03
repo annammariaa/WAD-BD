@@ -22,3 +22,7 @@
 .nav-bar-link:hover {
   background-color: darkgrey;
 }
+
+.flex-item {
+  border-radius: 10px;
+}
