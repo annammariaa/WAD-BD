@@ -26,3 +26,23 @@
 .flex-item {
   border-radius: 10px;
 }
+
+.submit-button {
+  background-color: mediumblue;
+  border: none;
+  color: white;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.submit-button {
+  transition-duration: 0.4s;
+}
+
+.submit-button:hover {
+  background-color: white;
+  color: mediumblue;
+}
