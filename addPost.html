@@ -17,19 +17,22 @@
 
   <div class="container">
     <form id="submit-form" method="POST" action="index.html">
-
-      <div class="sidetext">
+      
+      <div class="small-container">
         <label for="textarea-upload">Post body</label>
-        <label for="file-upload">Select file</label>
+        <textarea class="sidecontent" id="textarea-upload" name="textarea-content" rows="7"
+          cols="25">textarea</textarea>
       </div>
 
-      <div class="sidecontent">
-        <textarea class="sidecontent" id="textarea-upload" name="textarea-content" rows="5"
-          cols="20">textarea</textarea>
+      <div class="small-container">
+        <label for="file-upload">Select file</label>
         <input type="file" id="file-upload" name="file-content">
       </div>
 
-      <input type="submit" id="submit-post" value="Create post">
+      <div class="small-container-button">
+        <input type="submit" id="submit-post" value="Create post">
+      </div>
+
     </form>
   </div>
 </body>
