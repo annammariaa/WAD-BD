@@ -1,0 +1,28 @@
+#footer {
+    list-style-type: none;
+    color: white;
+    text-align: center;
+    margin: 1px;
+    padding: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: dimgrey;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-container {
+    width: 50%;
+    list-style-type: none;
+    color: black;
+    vertical-align: center;
+    text-align: center;
+    margin: 3px;
+    padding: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: lightgray;
+}
