@@ -13,7 +13,6 @@
 
 .nav-bar-link {
   display: block;
-  padding: 8px;
   color: white;
   text-align: center;
   padding: 14px 16px;
@@ -24,7 +23,6 @@
   background-color: darkgrey;
 }
 
-.profile-img {
-  text-align: right;
-  padding: 3px;
+.flex-item {
+  border-radius: 10px;
 }
