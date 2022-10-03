@@ -10,6 +10,11 @@ form {
   flex-grow: 1;
 }
 
+a {
+  text-decoration: none;
+  text-align: center;
+}
+
 .container form {
   background-color: dimgrey;
   display: flex;
@@ -18,6 +23,9 @@ form {
   padding: 10px 10px 10px 10px;
 }
 
+input + a {
+  margin-top: 5px;
+}
 div > p {
   text-align: center;
 }
