@@ -3,6 +3,7 @@
 
 <head>
   <link rel="stylesheet" href="common_css.css">
+  <link rel="stylesheet" href="addPost.css">
 
   <title>add post</title>
 </head>
@@ -12,17 +13,25 @@
     <li class="nav-bar-element"><a href="index.html" class="nav-bar-link">Home</a></li>
     <li class="nav-bar-element"><a href="addPost.html" class="nav-bar-link">Add post</a></li>
   </ul>
+  <br>
 
-  <form id="submit-form" method="POST" action="index.html">
+  <div class="container">
+    <form id="submit-form" method="POST" action="index.html">
 
-    <label for="textarea-upload">Post body</label>
-    <textarea id="textarea-upload" name="textarea-content" rows="5" cols="20">textarea</textarea>
+      <div class="sidetext">
+        <label for="textarea-upload">Post body</label>
+        <label for="file-upload">Select file</label>
+      </div>
 
-    <label for="file-upload">Select file</label>
-    <input type="file" id="file-upload" name="file-content">
+      <div class="sidecontent">
+        <textarea class="sidecontent" id="textarea-upload" name="textarea-content" rows="5"
+          cols="20">textarea</textarea>
+        <input type="file" id="file-upload" name="file-content">
+      </div>
 
-    <input type="submit" id="submit-post" value="Create post">
-  </form>
+      <input type="submit" id="submit-post" value="Create post">
+    </form>
+  </div>
 </body>
 
 </html>
