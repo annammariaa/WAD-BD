@@ -24,6 +24,9 @@
   background-color: darkgrey;
 }
 
+.flex-item {
+  border-radius: 10px;
+}
 .profile-img {
   text-align: right;
   padding: 3px;
