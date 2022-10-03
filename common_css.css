@@ -23,3 +23,8 @@
 .nav-bar-link:hover {
   background-color: darkgrey;
 }
+
+.profile-img {
+  text-align: right;
+  padding: 3px;
+}
