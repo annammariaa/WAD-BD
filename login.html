@@ -13,15 +13,28 @@
       <li class="nav-bar-element"><a href="index.html" class="nav-bar-link">Home</a></li>
       <li class="nav-bar-element"><a href="addPost.html" class="nav-bar-link">Add post</a></li>
     </ul>
+    <br>
 
-    <form method="POST" action="index.html">
-      <label for="email"></label>
-      <input type="email" id="email" name="email" placeholder="Email" required>
-      <label for="password"></label>
-      <input type="password" id="password" name="password" placeholder="Password" required>
+    <div class="container">
+      <div>
+        <div>
+          Welcome to PostIt
+          <a href="#">Create an account</a>
+          or <br>
+          Please log in
+        </div>
+        <form method="POST" action="index.html">
+          <label for="email"></label>
+          <input type="email" id="email" name="email" placeholder="Email" required="true">
+          <label for="password"></label>
+          <input type="password" id="password" name="password" placeholder="Password" required="true">
 
-      <input type="submit" id="submit" value="Log in">
-    </form>
+          <input type="submit" id="submit" value="Log in">
+        </form>
+      </div>
+
+    </div>
+
   </body>
 
 </html>
