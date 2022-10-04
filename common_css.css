@@ -1,7 +1,7 @@
 #nav-bar {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 10px 5px 3px 10px;
   overflow: hidden;
   border-radius: 10px;
   background-color: dimgrey;
@@ -9,6 +9,8 @@
 
 .nav-bar-element {
   float: left;
+
+  font-size: 25px;
 }
 
 .nav-bar-link {
@@ -21,6 +23,7 @@
 
 .nav-bar-link:hover {
   background-color: darkgrey;
+  border-radius: 10px;
 }
 
 .flex-item {
