@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
     <script src="res/js/load_posts_from_json.js"></script>
     <link rel="stylesheet" href="res/css/common_css.css">
     <link rel="stylesheet" href="res/css/index.css">
+    <script type="text/javascript" src="res\scripts\scripts.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
-  </head>
+</head>
 
   <body onload="create_posts('res/json/posts.json')">
 
@@ -15,11 +16,19 @@
   <body onload="create_posts('https://api.jsonbin.io/v3/b/63616bd82b3499323bf2139a')">
   -->
   <header>
-    <ul id="nav-bar">
-      <li class="nav-bar-element"><a href="index.html" class="nav-bar-link">Home</a></li>
-      <li class="nav-bar-element"><a href="addPost.html" class="nav-bar-link">Add post</a></li>
-      <li class="profile-img"><img src="res/img/profile_photo.png" alt="Profile photo" style="width: 60px"></li>
-    </ul>
+      <ul id="nav-bar">
+          <li class="nav-bar-element"><a href="index.html" class="nav-bar-link">Home</a></li>
+          <li class="nav-bar-element"><a href="addPost.html" class="nav-bar-link">Add post</a></li>
+          <div class="profile-img" class="dropdown">
+              <img src="res/img/profile_photo.png" alt="Profile photo" style="width: 60px" onclick="dropdown()"
+                   class="dropbtn">
+          </div>
+      </ul>
+      <div id="picDropdown" class="dropdown-content">
+          <a href="#">Cat Cattington</a>
+          <a href="#">fluffypaws@me.ow</a>
+          <a href="#">Logout</a>
+      </div>
   </header>
 
       <div id="panel">
