@@ -1,107 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
     <link rel="stylesheet" href="res/css/common_css.css">
     <link rel="stylesheet" href="res/css/index.css">
+    <script type="text/javascript" src="res\scripts\scripts.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
-  </head>
+</head>
 
-  <body>
-  <header>
-    <ul id="nav-bar">
-      <li class="nav-bar-element"><a href="index.html" class="nav-bar-link">Home</a></li>
-      <li class="nav-bar-element"><a href="addPost.html" class="nav-bar-link">Add post</a></li>
-      <li class="profile-img"><img src="res/img/profile_photo.png" alt="Profile photo" style="width: 60px"></li>
-    </ul>
-  </header>
+<body>
+    <header>
+        <ul id="nav-bar">
+            <li class="nav-bar-element"><a href="index.html" class="nav-bar-link">Home</a></li>
+            <li class="nav-bar-element"><a href="addPost.html" class="nav-bar-link">Add post</a></li>
+            <div class="profile-img" class="dropdown">
+                <img src="res/img/profile_photo.png" alt="Profile photo" style="width: 60px" onclick="dropdown()"
+                    class="dropbtn">
+            </div>
+        </ul>
+        <div id="picDropdown" class="dropdown-content">
+            <a href="#">Cat Cattington</a>
+            <a href="#">fluffypaws@me.ow</a>
+            <a href="#">Logout</a>
+        </div>
+    </header>
 
-      <div id="panel">
+
+    <div id="panel">
         <div class="side-panel"></div>
 
         <div id="middle-panel">
 
-                <div class="post">
-                      <ul class="post-header">
-                          <li style="text-align: right">Oct 4, 2022</li>
-                          <li><img src="res/img/profile_photo.png" alt="Profile photo" style="width: 40px"></li>
-                      </ul>
+            <div class="post">
+                <ul class="post-header">
+                    <li style="text-align: right">Oct 4, 2022</li>
+                    <li><img src="res/img/profile_photo.png" alt="Profile photo" style="width: 40px"></li>
+                </ul>
 
-                        <div class="post-text">
-                            <i>"My life is constantly under construction. There's always something to improve"</i>
-                            <br>
+                <div class="post-text">
+                    <i>"My life is constantly under construction. There's always something to improve"</i>
+                    <br>
 
-                            <img src="res/img/cat1.png" alt="Profile photo" class="post-img">
-                        </div>
-
-                        <img src="res/img/like.png" alt="Profile photo" style="width: 30px">
+                    <img src="res/img/cat1.png" alt="Profile photo" class="post-img">
                 </div>
 
-                <div class="post">
-                        <ul class="post-header">
-                            <li style="text-align: right">Sep 22, 2022</li>
-                            <li><img src="res/img/pp3.png" alt="Profile photo" style="width: 40px"></li>
-                        </ul>
+                <img src="res/img/like.png" alt="Profile photo" style="width: 30px">
+            </div>
 
-                    <div class="post-text">
-                        Does anyone have any catnip in Narva mnt 25 student residence???
-                    </div>
+            <div class="post">
+                <ul class="post-header">
+                    <li style="text-align: right">Sep 22, 2022</li>
+                    <li><img src="res/img/pp3.png" alt="Profile photo" style="width: 40px"></li>
+                </ul>
 
-                        <img src="res/img/like.png" alt="Profile photo" style="width: 30px">
+                <div class="post-text">
+                    Does anyone have any catnip in Narva mnt 25 student residence???
                 </div>
 
-                <div class="post">
-                        <ul class="post-header">
-                            <li style="text-align: right">May 27, 2022</li>
-                            <li><img src="res/img/pp2.png" alt="Profile photo" style="width: 30px"></li>
-                        </ul>
+                <img src="res/img/like.png" alt="Profile photo" style="width: 30px">
+            </div>
 
-                        <div class="post-text">
-                            Looking for a team in group 4!!!!
-                        </div>
+            <div class="post">
+                <ul class="post-header">
+                    <li style="text-align: right">May 27, 2022</li>
+                    <li><img src="res/img/pp2.png" alt="Profile photo" style="width: 30px"></li>
+                </ul>
 
-                        <img src="res/img/like.png" alt="Profile photo" style="width: 30px">
+                <div class="post-text">
+                    Looking for a team in group 4!!!!
                 </div>
 
-                <div class="post">
-                        <ul class="post-header">
-                            <li style="text-align: right">Apr 20, 2022</li>
-                            <li><img src="res/img/pp4.png" alt="Profile photo" style="width: 30px"></li>
-                        </ul>
+                <img src="res/img/like.png" alt="Profile photo" style="width: 30px">
+            </div>
 
-                    <div class="post-text">
-                        My emotions regarding software engineering. :'(
-                        <br>
-                        <img src="res/img/cat2.jpg" alt="Profile photo" class="post-img">
-                    </div>
+            <div class="post">
+                <ul class="post-header">
+                    <li style="text-align: right">Apr 20, 2022</li>
+                    <li><img src="res/img/pp4.png" alt="Profile photo" style="width: 30px"></li>
+                </ul>
 
-                        <img src="res/img/like.png" alt="Profile photo" style="width: 30px">
+                <div class="post-text">
+                    My emotions regarding software engineering. :'(
+                    <br>
+                    <img src="res/img/cat2.jpg" alt="Profile photo" class="post-img">
                 </div>
 
-                <div class="post">
+                <img src="res/img/like.png" alt="Profile photo" style="width: 30px">
+            </div>
 
-                        <ul class="post-header">
-                            <li style="text-align: right">Mar 16, 2022</li>
-                            <li><img src="res/img/pp3.png" alt="Profile photo" style="width: 40px"></li>
-                        </ul>
+            <div class="post">
 
-                        <div class="post-text">
-                            The FitnessGram Pacer Test is a multistage aerobic capacity test that progressively gets more difficult as it continues. The 20 meter pacer test will begin in 30 seconds. Line up at the start. The running speed starts slowly, but gets faster each minute after you hear this signal. [beep] A single lap should be completed each time you hear this sound. [ding] Remember to run in a straight line, and run as long as possible. The second time you fail to complete a lap before the sound, your test is over. The test will begin on the word start. On your mark, get ready, start.
-                        </div>
+                <ul class="post-header">
+                    <li style="text-align: right">Mar 16, 2022</li>
+                    <li><img src="res/img/pp3.png" alt="Profile photo" style="width: 40px"></li>
+                </ul>
 
-                        <img src="res/img/like.png" alt="Profile photo" style="width: 30px">
+                <div class="post-text">
+                    The FitnessGram Pacer Test is a multistage aerobic capacity test that progressively gets more
+                    difficult as it continues. The 20 meter pacer test will begin in 30 seconds. Line up at the start.
+                    The running speed starts slowly, but gets faster each minute after you hear this signal. [beep] A
+                    single lap should be completed each time you hear this sound. [ding] Remember to run in a straight
+                    line, and run as long as possible. The second time you fail to complete a lap before the sound, your
+                    test is over. The test will begin on the word start. On your mark, get ready, start.
                 </div>
+
+                <img src="res/img/like.png" alt="Profile photo" style="width: 30px">
+            </div>
 
         </div>
 
         <div class="side-panel"></div>
-      </div>
+    </div>
 
-  <footer id="footer">
-      You have reached the end of Catbook
-  </footer>
+    <footer id="footer">
+        You have reached the end of Catbook
+    </footer>
 
-  </body>
+</body>
 
 </html>
