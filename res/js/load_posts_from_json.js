@@ -21,7 +21,8 @@ async function load_json(file_location) {
 async function create_posts(file_location) {
     const mainContainer = document.getElementById("middle-panel");
     // Loop through
-    const jsonData = await load_json(file_location);
+    const jsonDataRecord = await load_json(file_location);
+    const jsonData = jsonDataRecord.record;
 
     // Creates a div per post and appends it to the page
     for (let i = 0; i < jsonData.length; i++) {
@@ -31,7 +32,7 @@ async function create_posts(file_location) {
         const data = jsonData[i];
 
         // If the json object contains an image
-        if (data.keys.contains("img")) {
+        if (data.img !== undefined) {
             // Essentially the same post HTML from the original version
             div.innerHTML = `
             <ul class="post-header">
@@ -52,7 +53,7 @@ async function create_posts(file_location) {
             // Essentially the same post HTML from the original version
             div.innerHTML = `
             <ul class="post-header">
-                <li style="text-align: right"></li>
+                <li style="text-align: right">${data.time}</li>
                 <li><img src="${data.author}" alt="Profile photo" style="width: 40px"></li>
             </ul>
 
